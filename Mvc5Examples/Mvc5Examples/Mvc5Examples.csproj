@@ -239,12 +239,19 @@
     <Compile Include="Areas\Chapter07\Controllers\ch07DemosController.cs" />
     <Compile Include="Areas\Chapter08\Chapter08AreaRegistration.cs" />
     <Compile Include="Areas\Chapter08\Controllers\ch08DemosController.cs" />
+    <Compile Include="Areas\Chapter08\Controllers\MyDb2Controllers\MyDb2Table1Controller.cs" />
+    <Compile Include="Areas\Chapter08\Controllers\MyDb2Controllers\MyDb2Table2Controller.cs" />
+    <Compile Include="Areas\Chapter08\Controllers\MyDb2Controllers\MyDb2Table3Controller.cs" />
+    <Compile Include="Areas\Chapter08\cs\MyDb2Init.cs" />
+    <Compile Include="Areas\Chapter08\cs\MyDb2InitAlways.cs" />
     <Compile Include="Areas\Chapter08\Models\MyDb1Model\MyDb1.cs" />
     <Compile Include="Areas\Chapter08\Models\MyDb1Model\MyTable1.cs" />
     <Compile Include="Areas\Chapter08\Models\MyDb1Model\MyTable2.cs" />
     <Compile Include="Areas\Chapter08\Models\MyDb1Model\MyTable3.cs" />
     <Compile Include="Areas\Chapter08\Models\MyDb2Model\MyDb2.cs" />
     <Compile Include="Areas\Chapter08\Models\MyDb2Model\MyTable1.cs" />
+    <Compile Include="Areas\Chapter08\Models\MyDb2Model\MyTable2.cs" />
+    <Compile Include="Areas\Chapter08\Models\MyDb2Model\MyTable3.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -466,6 +473,23 @@
     <Content Include="Areas\Chapter07\Views\ch07Demos\panel2.cshtml" />
     <Content Include="Areas\Chapter07\Views\ch07Demos\popover.cshtml" />
     <Content Include="Areas\Chapter07\Views\ch07Demos\tooltip.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table2\Create.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table2\Delete.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table2\Details.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table2\Edit.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table2\Index.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table3\Create.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table3\Delete.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table3\Details.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table3\Edit.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table3\Index.cshtml" />
+    <Content Include="Areas\Chapter08\Views\Shared\ch08Demos.cshtml" />
+    <Content Include="Areas\Chapter08\Views\ch08Demos\ch08Index.cshtml" />
+    <Content Include="Areas\Chapter08\Views\ch08Demos\InitMyDb2.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Views\Shared\_AreasPartialRef.cshtml" />
     <Content Include="Views\Shared\_AreasPartialAjax.cshtml" />
     <Content Include="Areas\Chapter01\Views\_ViewStart.cshtml" />
@@ -485,6 +509,14 @@
     <Content Include="Areas\Chapter07\Views\ch07Demos\sliderUI.cshtml" />
     <Content Include="Areas\Chapter07\Views\ch07Demos\menuUI.cshtml" />
     <Content Include="Areas\Chapter08\Views\web.config" />
+    <Content Include="Areas\Chapter08\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Chapter08\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table1\Create.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table1\Delete.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table1\Details.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table1\Edit.cshtml" />
+    <Content Include="Areas\Chapter08\Views\MyDb2Table1\Index.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -551,8 +583,6 @@
     <Folder Include="Areas\Chapter04\Models\" />
     <Folder Include="Areas\Chapter06\Models\" />
     <Folder Include="Areas\Chapter07\Models\" />
-    <Folder Include="Areas\Chapter08\Views\ch08Demos\" />
-    <Folder Include="Areas\Chapter08\Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

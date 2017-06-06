@@ -10,15 +10,17 @@ namespace Mvc5Examples.Areas.Chapter08.Models.MyDb2Model
     [Table("MyTable1")]
     public class MyTable1
     {
-        [Key,DatabaseGenerated(DatabaseGeneratedOption.None)]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Required]
-        [StringLength(3,MinimumLength =3)]
-        [Display(Name ="课程编号")]
+        [StringLength(3, MinimumLength = 3)]
+        [Display(Name = "课程编号")]
         public string KeChengID { get; set; }
+
         [Required]
         [StringLength(30)]
-        [Display(Name ="课程名称")]
+        [Display(Name = "课程名称")]
         public string KeChengName { get; set; }
+
         public virtual ICollection<MyTable3> MyTable3 { get; set; }
     }
 }

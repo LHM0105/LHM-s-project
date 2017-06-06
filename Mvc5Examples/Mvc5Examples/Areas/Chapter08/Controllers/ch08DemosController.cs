@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Mvc5Examples.Areas.Chapter08.cs;
+using Mvc5Examples.Areas.Chapter08.Models.MyDb2Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -22,5 +24,15 @@ namespace Mvc5Examples.Areas.Chapter08.Controllers
             
         }
 
+        public ActionResult InitMyDb2()
+        {
+            MyDb2 db = new MyDb2();
+            MyDb2InitAlways context = new MyDb2InitAlways();
+            context.InitializeDatabase(db);
+            ViewBag.Count1 = db.MyTable1.Count();
+            ViewBag.Count2 = db.MyTable2.Count();
+            ViewBag.Count3 = db.MyTable3.Count();
+            return PartialView();
+        }
     }
 }
